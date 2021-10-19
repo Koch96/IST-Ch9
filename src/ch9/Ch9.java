@@ -11,7 +11,14 @@ import javax.swing.JOptionPane;
 public class Ch9 {
 
     public static void main(String[] args) {
-        String name = JOptionPane.showInputDialog("What is your name?");
+//        String name = JOptionPane.showInputDialog("What is your name?");
+//        JOptionPane.showMessageDialog(null, "Hello + " + name);
+        
+        String ans = JOptionPane.showInputDialog(null, "What is 2 + 2?", "Math", JOptionPane.QUESTION_MESSAGE);
+        if (ans.equals("4")){
+            JOptionPane.showMessageDialog(null, "That is Correct!");
+            
+        }
     }
 
 }
